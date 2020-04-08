@@ -76,6 +76,7 @@ section#popup {
   z-index: 10;
   transition: all 0.7s ease-out;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 section#popup.open {
@@ -170,4 +171,13 @@ footer {
 
 footer > span {
   margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  section#popup.open {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    padding: 1.2rem 2rem;
+  }
 }
